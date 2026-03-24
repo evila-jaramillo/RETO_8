@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tienda Fashion - Productos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <h1>Fashion Store</h1>
+  <nav>
+    <a href="index.html">Inicio</a>
+    <a href="productos.html">Productos</a>
+    <a href="compras.html">Compras</a>
+    <a href="acercade.html">Acerca de</a>
+    <a href="contacto.html">Contacto</a>
+  </nav>
+</header>
+
+
+
+
+<main class="productos">
+  <h2>Nuestros Productos</h2>
+
+  <!-- Filtro categorías -->
+  <select id="filtro" onchange="filtrarProductos()">
+    <option value="todos">Todos</option>
+    <option value="hombres">Hombres</option>
+    <option value="mujer">Mujer</option>
+    <option value="niño">Niño</option>
+    <option value="jeans">Jeans</option>
+  </select>
+
+  
+  <!-- Contenedor donde se mostrará la lista filtrada -->
+  <div id="listaProductos">
+
+    <!-- Aquí se generan productos dinámicamente desde JS -->
+
+  </div>
+</main>
+<footer>
+  <p>© 2026 Tienda Fashion Store</p>
+</footer>
+<Script src="script.js"></Script>
+</body>
+</html>

@@ -1,0 +1,270 @@
+/* Fondo y tipografía general */
+body {
+    background-color: #e60073;
+    font-family: Arial, sans-serif;
+    margin: 0;
+  }
+  
+  /* Header */
+  header {
+    background-color: #e60073;
+  }
+  
+  /* Navegación */
+  nav a {
+    color: white;
+    margin: 0 10px;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Carrito */
+  .carrito-icono {
+    user-select: none;
+  }
+  
+  /* Panel carrito */
+  #carrito-panel {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background: white;
+    color: black;
+    padding: 15px;
+    border-radius: 10px;
+    width: 280px;
+    max-height: 400px;
+    overflow-y: auto;
+    display: none;
+    z-index: 1050;
+  }
+  
+  #lista-carrito {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 15px;
+  }
+  
+  /* Productos */
+  .productos {
+    background-color: #f5f5f5;
+    padding: 40px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+  
+  .producto {
+    background: white;
+    border-radius: 10px;
+    padding: 15px;
+    width: 220px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+  
+  .producto img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    height: 250px;
+    margin-bottom: 10px;
+  }
+  
+  /* Botones rosas */
+  .btn-pink {
+    background-color: #ff4b81;
+    border: none;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: 600;
+  }
+  
+  .btn-pink:hover {
+    background-color: #e60073;
+  }
+  
+  /* Sección Nosotros */
+  .nosotros {
+    background: #f0f0f0;
+    color: #444;
+  }
+  
+  .banner {
+    background: url('https://images.unsplash.com/photo-1520975864335-8f41e2de5f8c?auto=format&fit=crop&w=1350&q=80') center/cover no-repeat;
+    padding: 40px 20px;
+    margin-top: 20px;
+    color: #e60073;
+    font-weight: 700;
+    font-size: 24px;
+  }
+  
+  .banner p {
+    font-weight: 400;
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .banner button {
+    margin-top: 10px;
+  }
+  
+  /* Sección Contacto */
+  .contacto {
+    background-color: #d8b3d9;
+    color: #800080;
+  }
+  
+  .redes a {
+    background-color: #a682b0;
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 0 10px;
+    display: inline-block;
+    font-weight: 600;
+  }
+  
+  /* Footer */
+  footer {
+    background-color: #e60073;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+  }
+  
+  /* Carrusel */
+  .carousel {
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0,0,0,0.15);
+    background: white;
+  }
+  
+  .carousel img {
+    height: 400px;
+    object-fit: cover;
+    width: 100%;
+  }
+  
+  .carousel-caption {
+    background: rgba(230, 0, 115, 0.7);
+    padding: 15px;
+    border-radius: 0 0 15px 15px;
+  }
+  
+  .carousel-caption h5,
+  .carousel-caption p {
+    color: white;
+    font-weight: 700;
+  }
+ /* Reset y estilos base */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f8f8;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+header {
+  background-color: #ee1b9d;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header nav a {
+  color: #160410;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+header nav a:hover {
+  text-decoration: underline;
+}
+
+main.productos {
+  max-width: 1100px;
+  margin: 30px auto;
+  padding: 0 15px;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo select filtro */
+select#filtro {
+  display: block;
+  margin: 0 auto 25px auto;
+  padding: 10px 15px;
+  font-size: 16px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Contenedor productos */
+#listaProductos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+/* Tarjeta producto */
+.producto {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 15px;
+  width: 260px;
+  text-align: center;
+  transition: transform 0.25s ease;
+  cursor: pointer;
+}
+
+.producto:hover {
+  transform: translateY(-6px);
+}
+
+.producto h3 {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #8f1dc9;
+}
+
+.producto img {
+  max-width: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  height: 260px;
+}
+
+.producto p {
+  font-size: 1rem;
+  color: #a80d87;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+footer {
+  background-color: #e20074;
+  color: white;
+  text-align: center;
+  padding: 15px 0;
+  margin-top: 40px;
+  font-weight: 600;
+}
